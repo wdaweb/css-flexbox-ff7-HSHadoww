@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(./homework_ff7/bg-full.jpg);
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url(./homework_ff7/bg-full.jpg);
+            filter: brightness(0.5);
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            width: 1200px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background: #000; */
+        }
+
+        .left {
+            float: left;
+            width: 600px;
+            height: 600px;
+            background-image: url(./homework_ff7/main.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #fff;
+            text-align: center;
+            filter: brightness();
+            background-repeat: no-repeat;
+        }
+
+        .left::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(./homework_ff7/main.jpg);
+            background-size: cover;
+            filter: brightness(0.7);
+            z-index: -1;
+            background-repeat: no-repeat;
+        }
+
+        .right {
+            width: 600px;
+            height: 600px;
+            float: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .up {
+            width: 600px;
+            height: 300px;
+            background: #aaa;
+            background-image: url(./homework_ff7/cloud.png);
+            background-repeat: no-repeat;
+            background-size: 40%;
+            position: relative;
+            background-position: right bottom;
+            margin: 0;
+            padding: 0;
+        }
+
+        .up h1 {
+            position: absolute;
+            top: 50px;
+            left: 20px;
+        }
+
+        .up p {
+            position: absolute;
+            top: 100px;
+            left: 20px;
+        }
+
+        .down {
+            width: 600px;
+            height: 300px;
+            background: #000;
+            background-image: url(./homework_ff7/tifa.png);
+            background-repeat: no-repeat;
+            background-size: 40%;
+            position: relative;
+            background-position: left bottom;
+            color: #fff;
+        }
+
+        .down h1 {
+            position: absolute;
+            top: 50px;
+            left: 205px;
+        }
+
+        .down p {
+            position: absolute;
+            top: 100px;
+            left: 205px;
+        }
+
+        img {
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="cd"><img src="/homework_ff7/ps4-ff7.png" alt=""></div>
+            <div class="text">
+                <h1>AVAILABLE NOW</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+                    Cumque, eligendi quam alias ea est essefacere <br>
+                    animi nihil fugit atque nam vel debitis nulla eaque
+                    <br>perferendis illo repellendus, tempora ab?
+                </p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="up">
+                <h1>Cloud</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br> Dolorem facere voluptates eos nobis
+                    praesentium! <br>Itaque tempore laudantium natus dolore, distinctio <br>consequuntur.
+                    Nam, quos veniam.
+                    Repellendus <br> at reiciendis earum provident aut.
+                </p>
+            </div>
+            <div class="down">
+                <h1>Tifa</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br> Dolorem facere voluptates eos nobis
+                    praesentium! <br>Itaque tempore laudantium natus dolore, distinctio <br>consequuntur.
+                    Nam, quos veniam.
+                    Repellendus <br> at reiciendis earum provident aut.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

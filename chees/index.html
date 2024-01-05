@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chi {
+            width: 800px;
+            height: 780px;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .row {
+            width: 710px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main {
+            width: 800px;
+            height: 850px;
+            border: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .content {
+            width: 640px;
+            height: 728px;
+            border: 1px solid #000;
+        }
+
+        .rw1 {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+        }
+
+        .box {
+            /* flex: auto; */
+            width: 80px;
+            height: 80px;
+            border-right: 1px solid #000;
+            border-bottom: 1px solid #000;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            width: 80px;
+            height: 80px;
+            /* border-right:1px solid #000; */
+            border-bottom: 1px solid #000;
+            box-sizing: border-box;
+        }
+
+        .line1 {
+            display: inline-block;
+            width: 113px;
+            position: absolute;
+            border-bottom: 1px solid #000;
+            transform: rotate(45deg);
+            left: -17px;
+            top: 39px;
+        }
+
+        .line2 {
+            display: inline-block;
+            width: 113px;
+            position: absolute;
+            border-bottom: 1px solid #000;
+            transform: rotate(-45deg);
+            left: -17px;
+            top: 39px;
+        }
+
+        .ch {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* flex-direction: row; */
+        }
+
+        .chii {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+        .chiii{
+            border-radius: 50%;
+            border: 1px solid #000;
+            background: white;
+        }
+        .chiiii{
+            border-radius: 50%;
+            border: 1px solid #000;
+            background: white;
+            color: red;
+        }
+        .a1 {
+            margin-right: 10px;
+        }
+
+        .a2 {
+            margin-left: 10px;
+        }
+
+        .river {
+            width: 800px;
+            height: 88px;
+            border-bottom: 1px solid #000;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .a3 {
+            font-family: '標楷體';
+            font-size: 50px;
+        }
+
+        p {
+            width: 30px;
+            height: 900px;
+            font-family: '標楷體';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 37px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ch">
+
+        <p class="a1">棋盤裡 ， 車無輪 ， 馬無疆 ， 叫聲將軍提防提防</p>
+        <div class="main">
+            <div class="content">
+                <div class="rw1">
+                    <div class="box">
+                    </div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box">
+                        <div class="line1"></div>
+                    </div>
+                    <div class="box">
+                        <div class="line2"></div>
+                    </div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box1"></div>
+                </div>
+                <div class="rw1">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box">
+                        <div class="line2"></div>
+                    </div>
+                    <div class="box">
+                        <div class="line1"></div>
+                    </div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box1"></div>
+                </div>
+                <div class="rw1">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box1"></div>
+                </div>
+                <div class="rw1">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box1"></div>
+                </div>
+                <div class="rw1">
+                    <div class="river">
+                        <div class="a3">楚河</div>
+                        <div class="a3">漢界</div>
+                    </div>
+                </div>
+                <div class="rw1">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box1"></div>
+                </div>
+                <div class="rw1">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box1"></div>
+                </div>
+                <div class="rw1">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box">
+                        <div class="line1"></div>
+                    </div>
+                    <div class="box">
+                        <div class="line2"></div>
+                    </div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box1"></div>
+                </div>
+                <div class="rw1">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box">
+                        <div class="line2"></div>
+                    </div>
+                    <div class="box">
+                        <div class="line1"></div>
+                    </div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box1"></div>
+                </div>
+            </div>
+        </div>
+        <p class="a2">圖畫裡 ， 龍不吟 ， 虎不嘯 ， 小小書童可笑可笑</p>
+    </div>
+    <div class="chi">
+        <div class="row">
+            <div class="chii chiii">車</div>
+            <div class="chii chiii">馬</div>
+            <div class="chii chiii">象</div>
+            <div class="chii chiii">士</div>
+            <div class="chii chiii">將</div>
+            <div class="chii chiii">士</div>
+            <div class="chii chiii">象</div>
+            <div class="chii chiii">馬</div>
+            <div class="chii chiii">車</div>
+        </div>
+        <div class="row">
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+        </div>
+        <div class="row">
+            <div class="chii"></div>
+            <div class="chii chiii">包</div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii chiii">包</div>
+            <div class="chii"></div>
+        </div>
+        <div class="row">
+            <div class="chii chiii">卒</div>
+            <div class="chii"></div>
+            <div class="chii chiii">卒</div>
+            <div class="chii"></div>
+            <div class="chii chiii">卒</div>
+            <div class="chii"></div>
+            <div class="chii chiii">卒</div>
+            <div class="chii"></div>
+            <div class="chii chiii">卒</div>
+        </div>
+        <div class="row">
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+        </div>
+        <div class="row">
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+        </div>
+        <div class="row">
+            <div class="chii chiiii">兵</div>
+            <div class="chii"></div>
+            <div class="chii chiiii">兵</div>
+            <div class="chii"></div>
+            <div class="chii chiiii">兵</div>
+            <div class="chii"></div>
+            <div class="chii chiiii">兵</div>
+            <div class="chii"></div>
+            <div class="chii chiiii">兵</div>
+        </div>
+        <div class="row">
+            <div class="chii"></div>
+            <div class="chii chiiii">炮</div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii chiiii">炮</div>
+            <div class="chii"></div>
+        </div>
+        <div class="row">
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+            <div class="chii"></div>
+        </div>
+        <div class="row">
+            <div class="chii chiiii">俥</div>
+            <div class="chii chiiii">傌</div>
+            <div class="chii chiiii">相</div>
+            <div class="chii chiiii">仕</div>
+            <div class="chii chiiii">帥</div>
+            <div class="chii chiiii">仕</div>
+            <div class="chii chiiii">相</div>
+            <div class="chii chiiii">傌</div>
+            <div class="chii chiiii">俥</div>
+        </div>
+    </div>
+</body>
+
+</html>
